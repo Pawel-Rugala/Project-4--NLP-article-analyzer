@@ -1,4 +1,4 @@
-const postData = async (url = '/meaning', data) => {
+const postData = async (url = 'http://localhost:8081/meaning', data) => {
   if (data) {
     let nData = { txt: data };
     const res = await fetch(url, {
