@@ -3,8 +3,9 @@ import './styles/colors.scss';
 import './styles/typography.scss';
 import './styles/elements.scss';
 
+import validateUrl from './js/validateUrl';
 import updatePage from './js/updatePage';
 import formHandler from './js/formHandler';
 import postData from './js/postData';
 
-export { updatePage, formHandler, postData };
+export { validateUrl, updatePage, formHandler, postData };
