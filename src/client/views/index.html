@@ -24,5 +24,14 @@
         <h3 id="subject">Subjective or Objective?</h3>
       </div>
     </section>
+    <script>
+ // Check that service workers are supported
+ if ('serviceWorker' in navigator) {
+     // Use the window load event to keep the page load performant
+     window.addEventListener('load', () => {
+         navigator.serviceWorker.register('/service-worker.js');
+     });
+ }
+</script>
   </body>
 </html>
