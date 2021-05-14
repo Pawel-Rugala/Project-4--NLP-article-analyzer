@@ -1,0 +1,18 @@
+// IMPORTS
+@import './colors.scss';
+
+form {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  border: 1px dotted $lightblack;
+  padding: 2.5rem;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  cursor: pointer;
+}
