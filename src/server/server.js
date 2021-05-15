@@ -39,14 +39,6 @@ const meanCloud = async (data, res) => {
 };
 
 // ROUTESje
-app.get('/', (req, res) => {
-  res.sendFile('dist/index.html');
-});
-
-app.get('/test', (req, res) => {
-  res.send('test');
-});
-
 app.post('/meaning', (req, res) => {
   meanCloud(req.body.txt, res);
 });
