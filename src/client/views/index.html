@@ -9,13 +9,12 @@
   <body>
     <h1>Evaluate a News Article with Natural Language Processing</h1>
     <section>
-      <h2>Paste URL to the article</h2>
+      <h2 id="status">Paste URL to the article</h2>
       <form onsubmit="return Client.formHandler(event)">
-        <input id="txt" placeholder="Paste Article Content"></input>
+        <input type="url" id="url" placeholder="Paste Article Content"></input>
         <button type="submit" onclick="return
           Client.formHandler(event)">Submit</button>
       </form>
-      <h2 id="status"></h2>
     </section>
     <section>
       <h2>Please find the results</h2>

@@ -38,9 +38,13 @@ const meanCloud = async (data, res) => {
   );
 };
 
-// ROUTES
+// ROUTESje
 app.get('/', (req, res) => {
   res.sendFile('dist/index.html');
+});
+
+app.get('/test', (req, res) => {
+  res.send('test');
 });
 
 app.post('/meaning', (req, res) => {
@@ -51,6 +55,3 @@ app.post('/meaning', (req, res) => {
 app.listen(8081, function () {
   console.log('Example app listening on port 8081!');
 });
-
-// For testing purpose
-module.exports = app;
